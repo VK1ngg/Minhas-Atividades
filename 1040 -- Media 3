@@ -1,0 +1,21 @@
+lista = input( ).split()
+n1, n2, n3, n4 = float(lista[0]), float(lista[1]), float(lista[2]), float(lista[3])
+N1 = n1*2
+N2 = n2*3
+N3 = n3*4
+Media1 = (N1 + N2 + N3 + n4)/10
+print(f"Media: {Media1:.1f}")
+if 5 <= Media1 < 7:
+    print("Aluno em exame.")
+    n5 = int(input( ))
+    print(f"Nota do exame: {n5:.1f}")
+    Media2 = (Media1 + n5)/2
+    if Media2 >= 5:
+        print ("Aluno aprovado.")
+    else:
+        print ("Aluno reprovado.")
+    print(f"Media final: {Media2:.1f}")
+elif Media1 >= 7:
+    print("Aluno aprovado.")
+else:
+    print("Aluno reprovado.")
