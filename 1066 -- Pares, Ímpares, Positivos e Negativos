@@ -1,0 +1,54 @@
+x = int(input( ))
+y = int(input( ))
+z = int(input( ))
+a = int(input( ))
+b = int(input( ))
+
+d = 0
+e = 0
+f = 0
+g = 0
+if x > 0:
+    d=d+1  
+elif x < 0:
+    e=e+1
+if y > 0:
+    d=d+1
+elif y < 0:
+    e=e+1
+if z > 0:
+    d=d+1
+elif z < 0:
+    e=e+1
+if a > 0:
+    d=d+1
+elif a < 0:
+    e=e+1
+if b > 0:
+    d=d+1
+elif b < 0:
+    e=e+1
+
+if x%2==0:
+    f=f+1
+else:
+    g=g+1
+if y%2==0:
+    f=f+1
+else:
+    g=g+1
+if z%2==0:
+    f=f+1
+else:
+    g=g+1
+if a%2==0:
+    f=f+1
+else:
+    g=g+1
+if b%2==0:
+    f=f+1
+
+print(f"{f} valores par(es)")
+print(f"{g} valores impar(es)")
+print(f"{d} valores positivo(s)")
+print(f"{e} valores negativo(s)")
