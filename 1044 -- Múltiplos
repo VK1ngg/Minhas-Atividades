@@ -1,0 +1,7 @@
+lista = input( ).split()
+a, b = float(lista[0]), float(lista[1])
+
+if a%b==0 or b%a==0:
+    print("Sao Multiplos")
+else:
+    print("Nao sao Multiplos")
