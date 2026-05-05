@@ -1,0 +1,9 @@
+lista = input( ).split()
+a, b, c = float(lista[0]), float(lista[1]), float(lista[2])
+
+if a >= (b + c) or b >= (a + c) or c >= (a + b):
+    Area = ((a+b)*c)/2
+    print(f"Area = {Area:.1f}")
+else:
+    Perimetro = a+b+c
+    print(f"Perimetro = {Perimetro:.1f}")
