@@ -1,0 +1,22 @@
+x = float(input( ))
+y = float(input( ))
+z = float(input( ))
+a = float(input( ))
+b = float(input( ))
+c = float(input( ))
+
+d = 0
+if x > 0:
+    d=d+1    
+if y > 0:
+    d=d+1
+if z > 0:
+    d=d+1
+if a > 0:
+    d=d+1
+if b > 0:
+    d=d+1
+if c > 0:
+    d=d+1
+
+print(f"{d} valores positivos")
