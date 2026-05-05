@@ -1,0 +1,31 @@
+x = float(input( ))
+y = float(input( ))
+z = float(input( ))
+a = float(input( ))
+b = float(input( ))
+c = float(input( ))
+
+d = 0
+M = 0
+if x > 0:
+    d=d+1
+    M = M + x
+if y > 0:
+    d=d+1
+    M = M + y
+if z > 0:
+    d=d+1
+    M = M + z
+if a > 0:
+    d=d+1
+    M = M + a
+if b > 0:
+    d=d+1
+    M = M + b
+if c > 0:
+    d=d+1
+    M = M + c
+
+M = M/d
+print(f"{d} valores positivos")
+print(f"{M:.1f}")
