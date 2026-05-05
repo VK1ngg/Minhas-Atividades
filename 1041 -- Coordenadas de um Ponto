@@ -1,0 +1,21 @@
+lista = input( ).split()
+x, y = float(lista[0]), float(lista[1])
+
+if x > 0 and y > 0:
+    print ("Q1")
+elif x < 0 and y > 0:
+    print ("Q2")
+elif x < 0 and y < 0:
+    print ("Q3")
+elif x > 0 and y < 0:
+    print ("Q4")
+elif x == 0:
+    if x == y == 0:
+        print("Origem")
+    else:
+        print("Eixo Y")
+elif y == 0:
+    if x == y == 0:
+        print("Origem")
+    else:
+        print("Eixo X")
