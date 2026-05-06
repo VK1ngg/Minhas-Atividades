@@ -1,0 +1,36 @@
+lista = input( ).split()
+A, B, C = float(lista[0]), float(lista[1]), float(lista[2])
+if C > B >= A:
+    a = C
+    b = B
+    c = A
+elif C > A >= B:
+    a = C
+    b = A
+    c = B
+elif B > A >= C:
+    a = B
+    b = A
+    c = C
+elif B > C >= A:
+    a = B
+    b = C
+    c = A
+else:
+    a = A
+    b = B
+    c = C
+if a >= (b+c) or b >= (a+c) or c >= (a+b):
+    print("NAO FORMA TRIANGULO")
+else:
+    if a*a == (b*b) + (c*c):
+        print("TRIANGULO RETANGULO")
+    elif a*a > (b*b) + (c*c):
+        print("TRIANGULO OBTUSANGULO")
+    elif a*a < (b*b) + (c*c):
+        print("TRIANGULO ACUTANGULO")
+    if a == b or a == c or b == c:
+        if a == b == c:
+            print("TRIANGULO EQUILATERO")
+        else:
+            print("TRIANGULO ISOSCELES")
