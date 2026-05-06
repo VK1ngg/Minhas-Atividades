@@ -1,0 +1,10 @@
+lista = input( ).split()
+x, y = int(lista[0]), int(lista[1])
+
+if x == y:
+    print("O JOGO DUROU 24 HORA(S)")
+else:
+    if y < x:
+        y = y + 24
+    z = y - x
+    print(f"O JOGO DUROU {z} HORA(S)")
