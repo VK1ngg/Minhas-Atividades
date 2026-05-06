@@ -1,0 +1,17 @@
+X = float(input( ))
+y = 0
+if X <= 400:
+    y = 15
+elif 400 < X <= 800:
+    y = 12
+elif 800 < X <= 1200:
+    y = 10
+elif 1200 < X <= 2000:
+    y = 7
+else:
+    y = 4
+Z = X*(y/100)
+z = X + Z
+print(f"Novo salario: {z:.2f}")
+print(f"Reajuste ganho: {Z:.2f}")
+print(f"Em percentual: {y} %")
