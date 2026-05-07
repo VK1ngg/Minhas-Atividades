@@ -1,0 +1,24 @@
+modo = input("Digite a operação que deseja usar: ")
+if modo == "+":
+    print("Operação escolhida: adição.")
+    n1 = float(input("Digite o primeiro número que deseja usar: "))
+    n2 = float(input("Digite o segundo número que deseja usar: "))
+    n3 = n1 + n2
+elif modo == "-":
+    print("Operação escolhida: subtração.")
+    n1 = float(input("Digite o primeiro número que deseja usar: "))
+    n2 = float(input("Digite o segundo número que deseja usar: "))
+    n3 = n1 - n2
+elif modo == "*":
+    print("Operação escolhida: multiplicação.")
+    n1 = float(input("Digite o primeiro número que deseja usar: "))
+    n2 = float(input("Digite o segundo número que deseja usar: "))
+    n3 = n1 * n2
+elif modo == ":":
+    print("Operação escolhida: divisão.")
+    n1 = float(input("Digite o primeiro número que deseja usar: "))
+    n2 = float(input("Digite o segundo número que deseja usar: "))
+    if n2 == 0:
+        n2 = float(input("O 0 é um valor inválido. Digite um valor adequado. Se errar de novo, o programa será fechado."))
+    n3 = n1/n2
+print(f"O resultado é {n3:.0f}.")
