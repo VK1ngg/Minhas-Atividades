@@ -1,0 +1,4 @@
+s = input("Digite o substantivo que deseja usar: ")
+a = input("Digite o adjetivo que deseja usar: ")
+v = input("Digite o verbo que deseja usar: ")
+print("O", s, a, v, "sobre o cachorro marrom preguiçoso.")
