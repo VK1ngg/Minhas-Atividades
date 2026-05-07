@@ -1,0 +1,13 @@
+n1 = float(input("Digite o valor do primeiro lado do triângulo: "))
+n2 = float(input("Digite o valor do segundo lado do triângulo: "))
+n3 = float(input("Digite o valor do terceiro lado do triângulo: "))
+
+if n1 >= (n2 + n3) or n2 >= (n1 +  n3) or n3 >= (n1 + n2):
+    print("Estes valores não formam um triângulo.")
+else:
+    if n1 == n2 == n3:
+        print("Este é um triângulo equilátero.")
+    elif n1 == n2 or n1 == n3 or n2 == n3:
+        print("Este é um triângulo isóceles.")
+    else:
+        print("Este é um triângulo escaleno.")
