@@ -1,0 +1,4 @@
+raio = float(input("Digite o valor do raio da circunferência desejada: ))
+PI = 3.14159
+area = PI * (raio**2)
+print(area)
