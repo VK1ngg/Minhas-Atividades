@@ -1,0 +1,14 @@
+def contador_de_vogais(a):
+    j = 0
+    i = 0
+    for i in a:
+        if (i == 'A' or i == 'a'
+        or i == 'E' or i == 'e'
+        or i == 'I' or i == 'i'
+        or i == 'O' or i ==
+            'o'
+        or i == 'U' or i == 'u'):
+            j = j+1
+    return j
+x = str(input("Digite o nome ou a frase que deseja contar as vogais: "))
+print(f"Seu texto ou frase tem {contador_de_vogais(x)} vogais.")
