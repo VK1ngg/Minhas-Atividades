@@ -1,0 +1,37 @@
+def ack(m, n):
+    if m == 0:
+        return (n + 1)
+    elif n == 0:
+        return(ack(m - 1, 1))
+    else:
+        return(ack(m-1, ack(m, n - 1)))
+
+print("Este programa realiza a função de Ackermann.")
+print("Os dois valores devem ser números inteiros positivos.")
+
+print("Este programa tem dois modos:")
+print("Modo 1- Digite seus valores para testar na função de Ackermann.")
+print("Modo 2- Verifique se a função de Ackermann de 3 e 4 resulta em 125.")
+modo = input("Digite o número do modo que deseja realizar: ")
+while modo != "1" and modo != "2":
+    print("Valor de módulo inválido!")
+    modo = input("Digite o número do modo que deseja realizar: ")
+
+if modo == "1":
+    print("Modo 1 escolhido.")
+    M = int(input("Digite o primeiro valor."))
+    while M < 0:
+        print("Valor inválido! Precisa ser um número inteiro positivo.")
+        M = int(input("Digite o primeiro valor."))
+    N = int(input("Digite o segundo valor."))
+    while N < 0:
+        print("Valor inválido! Precisa ser um número inteiro positivo.")
+        N = int(input("Digite o segundo valor."))
+    print(ack(M, N))
+
+elif modo == "2":
+    print("Modo 2 escolhido.")
+    print("Vamos testar usando m = 3 e n = 4")
+    print(ack(3, 4))
+    if ack(3, 4) == 125:
+        print("True")
