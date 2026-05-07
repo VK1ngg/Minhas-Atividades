@@ -1,0 +1,4 @@
+def dobro(a):
+    return a*2
+x = float(input("Digite um número que deseja dobrar: "))
+print(dobro(x))
