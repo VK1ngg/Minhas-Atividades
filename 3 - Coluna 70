@@ -1,0 +1,15 @@
+def right_justify(s):
+    y = len(s)
+    for i in range (1, 71-y):
+        print(" ", end="")
+    print(s)
+
+print("Este programa formata um texto ou palavra de forma que seu ultimo digito sempre estará na 70ª casa,")
+print("Acrescentando espaços antes do que foi digitado.")
+palavra = input("Digite a palavra ou a frase que deseja usar: ")
+while len(palavra) > 70:
+    print("Esta palavra ou frase é longa demais!")
+    palavra = input("Digite a palavra ou a frase que deseja usar: ")
+right_justify(palavra)
+
+#Aluno: Victor Antonio Moreira Aires
