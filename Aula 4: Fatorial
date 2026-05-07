@@ -1,0 +1,6 @@
+x = int(input("Digite o número que deseja botar em fatorial: "))
+y = x
+for i in range (x-1, 0, -1):
+    y = y * i
+    print (y)
+print("O resultado é", y)
