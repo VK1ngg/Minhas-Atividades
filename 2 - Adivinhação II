@@ -1,0 +1,18 @@
+import random
+numero = random.randint(1,10)
+print("Este programa seleciona um número aleatório entre 1 e 10.")
+print("Você tem 3 tentativas para adivinhar qual é!")
+x = int(input("Tente adivinhar o número! "))
+for t in range (1, 3):
+    if x < numero:
+        x = int(input("Foi baixo, tente novamente! "))
+    elif x > numero:
+        x = int(input("Foi alto, tente novamente! "))
+    else:
+        t = 3
+
+print(f"{numero} era o número!")
+if x == numero:
+    print("Você ganhou!")
+else:
+    print("Você perdeu!")
