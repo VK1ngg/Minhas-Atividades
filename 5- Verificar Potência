@@ -1,0 +1,19 @@
+def is_power(a, b):
+    ab = a/b
+    print(ab)
+    print(ab%b)
+    if a%b==0 and ab%b==0:
+        return True
+    else:
+        return False
+
+print("Este programa confere se um número é potência do outro. ")
+x = float(input("Digite o número do primeiro número: "))
+while x == 0:
+    print("Este número não pode ser igual a 0.")
+    x = float(input("Digite o número do primeiro número: "))
+y = float(input("Digite o número da segundo número: "))
+while y == 0:
+    print("Este número não pode ser igual a 0.")
+    y = float(input("Digite o número do segundo número: "))
+print(is_power(x, y))
