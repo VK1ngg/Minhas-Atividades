@@ -1,0 +1,3 @@
+nome = input("Nome: ")
+tipo = input("Categoria: ")
+print(f"NOME = {nome} STATUS: = {tipo}")
