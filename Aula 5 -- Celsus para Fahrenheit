@@ -1,0 +1,5 @@
+def celsius_para_fahrenheit(c):
+    return (c*1.8)+32
+
+x = float(input("Digite o valor em Celsus que deseja converter para fahrenheit: "))
+print("A temperatura em Farenheit é de", celsius_para_fahrenheit(x))
