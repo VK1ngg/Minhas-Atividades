@@ -1,0 +1,5 @@
+senha = input("Digite a senha que deseja criar: ")
+while len(senha) < 8:
+    print("A senha precisa ter 8 caracteres ou mais.")
+    senha = input("Digite a senha que deseja criar: ")
+print("Senha aceita!")
