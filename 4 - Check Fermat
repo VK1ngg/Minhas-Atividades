@@ -1,0 +1,44 @@
+def check_fermat(a, b, c, d):
+    if n > 2 and (a**d) + (b**d) == c**d:
+        print("Holy smokes, Fermat was wrong!")
+    else:
+        print("No, that doesn't work.")
+
+print("Este programa confere o último teorema de Fermat, que diz que")
+print("não existem números inteiros a, b e c tais que a**n +b**n== c**n")
+print("para quaisquer valores de n maiores que 2.")
+
+print("Você pode escolher qual modo usar:")
+print("No modo 1, os números precisam ser inteiros.")
+print("No modo 2, os números serão arredondados e se tornarão inteiros.")
+modo = input("Digite apenas o número do modo que deseja executar: ")
+while modo != "1" and modo != "2":
+    print("Modo invalido! ")
+    modo = input("Digite apenas o número do modo que deseja executar: ")
+    
+if modo == "1":
+    print("Modo 1 escolhido!")
+    x = int(input("Digite o primeiro valor: "))
+    y = int(input("Digite o segundo valor: "))
+    z = int(input("Digite o terceiro valor: "))
+    n = int(input("Agora digite o valor inteiro maior que 2 para elevar os outros números: "))
+    while n <= 2:
+        print("Este valor de n é inválido.")
+        n = int(input("Digite um valor inteiro maior que 2 para elevar os outros números: "))
+    check_fermat(x, y, z, n)
+    
+elif modo == "2":
+    print("Modo 2 escolhido!")
+    x = float(input("Digite o primeiro valor: "))
+    y = float(input("Digite o segundo valor: "))
+    z = float(input("Digite o terceiro valor: "))
+    n = float(input("Agora digite o valor inteiro maior que 2 para elevar os outros números: "))
+    while n <= 2:
+        print("Este valor de n é inválido.")
+        n = float(input("Digite um valor inteiro maior que 2 para elevar os outros números: "))
+    X = round(x, 0)
+    Y = round(y, 0)
+    Z = round(z, 0)
+    N = round(n, 0)
+    check_fermat(X, Y, Z, N)
+#Aluno: Victor Antonio Moreira Aires
