@@ -1,0 +1,13 @@
+def maior_de_tres(a, b, c):
+    if a > b and a > c:
+        return a
+    elif b > c and b > a:
+        return b
+    elif c > b and c > a:
+        return c
+    else:
+        return "Os três valores são iguais."
+x = float(input("Digite o primeiro número que deseja comparar: "))
+y = float(input("Digite o segundo número que deseja comparar: "))
+z = float(input("Digite o terceiro número que deseja comparar: "))
+print("O maior dentre os três números é:", maior_de_tres(x, y, z))
