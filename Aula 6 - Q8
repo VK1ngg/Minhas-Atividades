@@ -1,0 +1,7 @@
+x = int(input("Digite a temperatura atual: "))
+if x > 30:
+    print("Está muito quente.")
+elif x < 15:
+    print("Está muito frio.")
+else:
+    print("Está um dia agradável.")
