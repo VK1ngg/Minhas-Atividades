@@ -1,0 +1,8 @@
+def menu(x):
+    while x != 3:
+        x = int(input("1-Jogar   2-Opções   3-Sair "))
+    if x == 3:
+        return(x)
+
+X = 0
+menu(X)
