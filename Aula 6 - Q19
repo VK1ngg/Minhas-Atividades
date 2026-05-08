@@ -1,0 +1,12 @@
+def imprime_descendo(n):
+    if n == 0:
+        return n
+    else:
+        print(n)
+    return imprime_descendo(n - 1)
+
+x = int(input("Digite o número inteiro positivo que deseja imprimir seus menores até chegar no 1: "))
+while x <= 0:
+  print("Não seria possível com um número negativo ou de zero.")
+  x = int(input("Digite o número inteiro positivo que deseja imprimir seus menores até chegar no 1: "))
+imprime_descendo(x)
