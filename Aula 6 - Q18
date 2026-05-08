@@ -1,10 +1,9 @@
 def soma_ate_n(n):
-    y = n
     if n == 0:
-        return (y)
+        return (n)
     else:
-        y = y + soma_ate_n(y-1)
-        return (y)
+        n = n + soma_ate_n(n-1)
+        return (n)
         
 N = int(input("Digite o número que deseja somar por todos menores que ele: "))
 while N <= 0:
