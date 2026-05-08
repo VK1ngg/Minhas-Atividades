@@ -1,0 +1,14 @@
+def fatorial_rec(n):
+    y = n
+    if n == 1:
+        return (n)
+    else:
+        n = n - 1
+        y = y*fatorial_rec(n)
+        return (y)
+        
+N = int(input("Digite o número que deseja realizar o fatorial: "))
+while N <= 0:
+    print("Não existe fatorial de número negativo ou de zero.")
+    N = int(input("Digite o número que deseja realizar o fatorial: "))
+print(fatorial_rec(N))
