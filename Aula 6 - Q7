@@ -1,0 +1,5 @@
+x = int(input("Digite o ano de nascimento da pessoa: "))
+if 2026 - x >= 18:
+    print("Essa pessoa é maior de idade em 2026.")
+else:
+    print("Essa pessoa é menor de idade em 2026.")
