@@ -1,0 +1,8 @@
+def absoluto(numero):
+    if numero <= 0:
+        return (numero*(-1))
+    else:
+        return (numero)
+
+x = int(input("Digite o número que deseja tornar positivo: "))
+print("Seu número obtido é", absoluto(x))
