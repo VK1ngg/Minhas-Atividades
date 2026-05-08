@@ -1,5 +1,8 @@
-x = int(input("Digite o ano de nascimento da pessoa: "))
-if 2026 - x >= 18:
-    print("Essa pessoa é maior de idade em 2026.")
+lista = input("Digite, na mesma linha, as três notas de um aluno: ").split()
+n1, n2, n3 = float(lista[0]), float(lista[1]), float(lista[2])
+if (n1+n2+n3)/3 >= 7:
+    print("O aluno está aprovado.")
+elif (n1+n2+n3)/3 < 5:
+    print("O aluno está reprovado.")
 else:
-    print("Essa pessoa é menor de idade em 2026.")
+    print("O aluno terá que fazer uma prova final.")
