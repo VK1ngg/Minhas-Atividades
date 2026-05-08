@@ -1,0 +1,7 @@
+x = int(input("Digite um número para ser uma base: "))
+z = int(input("Digite um número para ser um expoente: "))
+y = x
+for i in range (z-1):
+    y = y * x
+    print(y)
+print("O resultado é", y)
