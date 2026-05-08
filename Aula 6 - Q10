@@ -1,0 +1,6 @@
+N = int(input("Digite quantos números deseja ler para o somatório."))
+y = 0
+for i in range (N):
+    x = int(input("Digite o número que deseja somar: "))
+    y = y + x
+print("O resultado do somatório foi", y)
