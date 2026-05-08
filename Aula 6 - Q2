@@ -1,0 +1,3 @@
+lista = input("Digite o nome de um funcionário e seu salário atual: ").split()
+nome, salario = str(lista[0]), int(lista[1])
+print("Novo salário:", (salario * 1.12))
