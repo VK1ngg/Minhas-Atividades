@@ -1,0 +1,10 @@
+def traco(tamanho):
+    for i in range (tamanho+1):
+        print("-", end = "")
+
+x = int(input("Digite o comprimento da linha que deseja."))
+while x <= 0:
+    print("Não pode ser um valor negativo ou igual a 0.")
+    x = int(input("Digite o comprimento da linha que deseja."))
+
+traco(x)
