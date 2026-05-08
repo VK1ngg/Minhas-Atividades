@@ -1,0 +1,10 @@
+def eh_triangulo(a, b, c):
+    if a >= (b + c) or b >= (a + c) or c >= (a + b):
+        return False
+    else:
+        return True
+
+x = int(input("Digite o primeiro lado do triângulo que deseja provar se existe: "))
+y = int(input("Digite o primeiro lado do triângulo que deseja provar se existe: "))
+z = int(input("Digite o primeiro lado do triângulo que deseja provar se existe: "))
+print(eh_triangulo(x, y, z))
