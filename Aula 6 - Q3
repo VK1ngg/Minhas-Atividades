@@ -1,0 +1,5 @@
+lista = input("Digite a base e a altura da parede que deseja medir: ").split()
+largura, altura = float(lista[0]), float(lista[1])
+balde = (largura*altura)/2
+round(balde)
+print(f"Você precisará de {balde} baldes de tinta para a parede.")
