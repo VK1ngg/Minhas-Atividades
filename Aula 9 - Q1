@@ -1,6 +1,0 @@
-numeros = [0] * 5
-for i in range (5):
-    numeros[i] = int(input(f"Digite o valor: "))
-
-for i in range (4, -1, -1):
-    print (numeros[i])
