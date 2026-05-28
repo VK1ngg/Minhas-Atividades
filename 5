@@ -1,0 +1,12 @@
+listaX = [0] * 10
+listaY = [0] * 10
+
+for i in range (10):
+    listaX[i] = float(input(f"Digite o {i+1}º número da lista: "))
+    x = listaX[i]
+    if x > 0:
+        listaY[i] = x
+    else:
+        listaY[i] = 0
+
+print (listaY)
