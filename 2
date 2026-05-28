@@ -1,0 +1,10 @@
+listaA = [0] * 5
+listaB = [0] * 5
+listaC = [0] * 5
+for i in range (5):
+    listaA[i] = int(input(f"Digite o {i+1}º número da lista A: "))
+    listaB[i] = int(input(f"Digite o {i+1}º número da lista B: "))
+    x, y = listaA[i], listaB[i]
+    listaC[i] = x + y
+
+print (f"Os valores da lista C é {listaC}")
