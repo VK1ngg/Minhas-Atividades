@@ -1,0 +1,20 @@
+lista = [0] * 8
+soma = int(0)
+
+for i in range (8):
+    lista[i] = int(input(f"Digite o {i+1}º número da lista: "))
+    soma += lista[i]
+
+print (lista)
+maior = menor = lista[7]
+for i in range (8):
+    if maior < lista[i-1]:
+        maior = lista[i-1]
+    print(maior)
+    if menor > lista[i-1]:
+        menor = lista[i-1]
+    print(menor)
+
+print("O maior é", maior)
+print("O menor é", menor)
+print("A média é", soma/8)
