@@ -1,0 +1,12 @@
+lista = [0] * 10
+par = int(0)
+impar = int(0)
+for i in range (10):
+    lista[i] = int(input(f"Digite o {i+1}º número da lista: "))
+    print (lista[i])
+    if lista [i]%2 == 0:
+        par +=1
+    else:
+        impar +=1
+
+print(f"A lista teve {impar} impares e {par} pares.")
