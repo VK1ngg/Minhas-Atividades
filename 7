@@ -1,0 +1,18 @@
+listaA = [0] * 10
+listaB = [0] * 10
+listaC = [False] * 10
+x = y = 0
+cont = 0
+for i in range (10):
+    listaA[i] = int(input(f"Digite o {i+1}º número da 1ª lista: "))
+    listaB[i] = int(input(f"Digite o {i+1}º número da 2ª lista: "))
+    x = listaA[i]
+    y = listaB[i]
+    if x == y:
+        listaC[i] = x
+    else:
+        cont += 1
+    
+for i in range (cont):
+    listaC.remove(False)
+print('Lista nova:', listaC)
