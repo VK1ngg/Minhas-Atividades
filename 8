@@ -1,0 +1,15 @@
+lista = [0] * 15
+x = 0
+
+for i in range (15):
+    lista[i] = int(input(f"Digite o {i+1}º número da lista: "))
+    if lista[i] == 0:
+        x += 1
+ 
+for i in range (x):
+    lista.remove(0)
+
+for i in range (x):
+    lista += [0]
+    
+print ("Nova lista:", lista)
