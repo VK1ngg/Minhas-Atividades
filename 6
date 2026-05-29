@@ -1,0 +1,8 @@
+lista = [11, 22, 33, 44, 55, 66, 77, 88, 99, 00]
+print('Lista original:', lista)
+x = lista[9]
+for i in range (9, 0, -1):
+    lista[i] = lista[i-1]
+    
+lista[0] = x
+print('Lista nova:', lista)
