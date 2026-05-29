@@ -1,0 +1,21 @@
+lista = [0] * 10
+n1 = n2 = 0
+
+for i in range (10):
+    lista[i] = int(input(f"Digite o {i+1}º número da lista: "))
+ 
+for i in range (9):
+    if lista[i] > lista[i+1] and lista[i] > n1:
+        n1 = lista[i]
+    elif lista[i] < lista[i+1] and n1 < lista[i+1]:
+        n1 = lista[i+1]
+
+lista.remove(n1)
+
+for i in range (8):
+    if lista[i] > lista[i+1] and lista[i] > n2:
+        n2 = lista[i]
+    elif lista[i] < lista[i+1] and n2 < lista[i+1]:
+        n2 = lista[i+1]
+
+print (f"Os dois maiores números da lista são {n1} e {n2}.")
