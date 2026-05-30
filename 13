@@ -1,0 +1,20 @@
+listaA = [1, 2, 3, 4, 1, 3, 4, 2, 2, 1, 3, 4, 1, 2, 3, 4, 4, 1, 2, 4]
+n1 = n2 = n3 = n4 = 0
+for i in range (20):
+    if listaA[i] == 1:
+        n1 += 1
+    elif listaA[i] == 2:
+        n2 += 1
+    elif listaA[i] == 3:
+        n3 += 1
+    elif listaA[i] == 4:
+        n4 += 1
+
+if n1 > n2 and n1 > n3 and n1 > n4:
+    print(f"O candidato com mais votos foi o candidato 1, com {n1} votos.")
+elif n2 > n1 and n2 > n3 and n2 > n4:
+    print(f"O candidato com mais votos foi o candidato 2, com {n2} votos.")
+elif n3 > n1 and n3 > n2 and n3 > n4:
+    print(f"O candidato com mais votos foi o candidato 3, com {n3} votos.")
+elif n4 > n1 and n4 > n2  and n4 > n3:
+    print(f"O candidato com mais votos foi o candidato 4, com {n4} votos.")
