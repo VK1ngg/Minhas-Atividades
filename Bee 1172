@@ -1,0 +1,8 @@
+lista = [0] * 10
+for i in range (10):
+    x = int(input( ))
+    if x > 0:
+        lista[i] = x
+    else:
+        lista[i] = 1
+    print(f"X[{i}] = {lista[i]}")
