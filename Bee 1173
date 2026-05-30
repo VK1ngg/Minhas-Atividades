@@ -1,0 +1,6 @@
+x = int(input( ))
+lista = [0] * 10
+for i in range (10):
+    lista[i] = x
+    x = x*2
+    print(f"N[{i}] = {lista[i]}")
