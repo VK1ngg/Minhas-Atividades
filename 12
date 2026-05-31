@@ -1,0 +1,9 @@
+frase = input("Digite a frase: ").split( )
+palavra = input("Digite uma palavra para proibir: ").lower( )
+print(frase)
+for i in range(len(frase)):
+    pralava = frase[i].lower( )
+    if pralava == palavra:
+        frase[i] = len(frase[i]) * '*'
+Frase = " ".join(frase)
+print(Frase)
