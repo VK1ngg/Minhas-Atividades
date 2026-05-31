@@ -1,0 +1,5 @@
+p = input("Digite a palavra que deseja cobrir as vogais: ")
+for i in p:
+    if i in "aeiouáéíóúãõâêôà":
+        p = p.replace(i, '*') 
+print(p)
