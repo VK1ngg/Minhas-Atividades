@@ -1,0 +1,8 @@
+p = input("Digite a palavra que deseja ler: ")
+l = input("Digite a letra que deseja procurar na palavra: ")
+L = 0
+for i in p:
+    if i == l:
+        L += 1
+
+print(f'A palavra apareceu {L} vezes.')
