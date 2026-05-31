@@ -1,0 +1,6 @@
+lista = [0] * 100
+N = float(input( ))
+for i in range (100):
+    lista[i] = N
+    print(f'N[{i}] = {lista[i]:.4f}')
+    N = N/2
