@@ -1,0 +1,4 @@
+p = input("Digite o nome completo: ")
+for i in p:
+    if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        print(i, end=' ')
