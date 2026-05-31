@@ -1,0 +1,18 @@
+X = int(input( ))
+for i in range (X):
+    LED = 0
+    N = input( )
+    for ii in (N):
+        if ii == '0' or ii == '9' or ii == '6':
+            LED += 6
+        elif ii == '1':
+            LED += 2
+        elif ii == '2' or ii == '3' or ii == '5':
+            LED += 5
+        elif ii == '4':
+            LED += 4
+        elif ii == '7':
+            LED += 3
+        elif ii == '8':
+            LED += 7
+    print(LED, "leds")
