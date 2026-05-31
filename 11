@@ -1,0 +1,12 @@
+fita1 = input("Digite a fita de DNA para encontrar uma fita complementar: ")
+fita2 = str()
+for i in fita1:
+    if i == 'A':
+        fita2 = fita2 + 'T'
+    elif i == 'T':
+        fita2 = fita2 + 'A'
+    elif i == 'C':
+        fita2 = fita2 + 'G'
+    elif i == 'G':
+        fita2 = fita2 + 'C'
+print("Fita encontrada:", fita2)
