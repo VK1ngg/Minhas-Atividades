@@ -1,0 +1,4 @@
+frase = input("Digite a frase que deseja contar o número de palavras: ")
+frase.split(" ")
+y = frase.count(" ")
+print(f"A frase tem {y} palavras.")
