@@ -1,0 +1,16 @@
+senha = input("Crie uma senha: ")
+f1 = f2 = f3 = f4 = False
+if len(senha) >= 8:
+    f1 = True
+    for i in senha:
+        if i in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+            f2 = True
+        elif i in 'abcdefghijklmnopqrstuvwxyz':
+            f3 = True
+        elif i in '1234567890':
+            f4 = True
+
+if f1 == f2 == f3 == f4 == True:
+    print("Senha aceita!")
+else:
+    print("Senha não aceita.")
