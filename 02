@@ -1,0 +1,6 @@
+numero = input( )
+n1 = numero[0:2]
+n2 = numero[2:7]
+n3 = numero[7:11]
+
+print(f'({n1}) {n2}-{n3}')
