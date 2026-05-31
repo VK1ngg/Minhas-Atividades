@@ -1,0 +1,5 @@
+p = input("Digite o cpf completo (SÓ NUMEROS): ")
+if len(p) == 11:
+    print("CPF Válido.")
+else:
+    print("CPF Não válido.")
