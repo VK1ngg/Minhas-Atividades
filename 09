@@ -1,0 +1,8 @@
+p1 = list(input("Digite a primeira palavra: "))
+p1.sort( )
+p2 = list(input("Digite a segunda palavra: "))
+p2.sort( )
+if p1 == p2:
+    print("True")
+else:
+    print("False")
