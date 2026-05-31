@@ -1,0 +1,2 @@
+p = input("Digite o nome completo: ").split( )
+print("Primeiro nome:", p[0]+", Último nome:", p[-1])
