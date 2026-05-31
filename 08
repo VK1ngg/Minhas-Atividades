@@ -1,0 +1,12 @@
+p = input("Digite uma sequência de letras repetidas: ")
+x = p[0]
+print(x)
+c = 0
+for i in p:
+    if i == x:
+        c += 1
+    else:
+        print(f"{x}{c}", end = '')
+        c = 1
+    x= i
+print(f"{i}{c}")
