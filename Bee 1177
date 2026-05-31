@@ -1,0 +1,9 @@
+lista = [0] * 1000
+N = int(input( ))
+Z = int(0)
+for i in range (1000):
+    if Z == N:
+        Z = 0
+    lista[i] = Z
+    print(f'N[{i}] =', lista[i])
+    Z += 1
