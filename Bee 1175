@@ -1,0 +1,7 @@
+lista = [0] * 20
+Lista = [0] * 20
+for i in range (20):
+    lista[i] = int(input( ))
+    Lista[19-i] = lista[i]
+for i in range (20):
+    print(f"N[{i}] = {Lista[i]}")
