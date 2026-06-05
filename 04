@@ -1,0 +1,18 @@
+matriz1 = [[0, 0, 0], [0, 0, 0]]
+for i in range(len(matriz1)):
+    for j in range(len(matriz1[i])):
+        matriz1[i][j] = int(input(f"Digite o {j+1}º elemento da {i+1}º coluna da 1ª matriz: "))
+    
+matriz2 = [[0, 0, 0], [0, 0, 0]]
+for i in range(len(matriz2)):
+    for j in range(len(matriz2[i])):
+        matriz2[i][j] = int(input(f"Digite o {j+1}º elemento da {i+1}º coluna da 2ª matriz: "))
+
+matriz3 = [[0, 0, 0], [0, 0, 0]]
+
+for i in range(len(matriz1)):
+    for j in range(len(matriz1[i])):
+        matriz3[i][j] = matriz1[i][j] + matriz2[i][j]
+
+print("Nova matriz:")
+print(matriz3)
