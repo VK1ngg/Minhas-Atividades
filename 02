@@ -1,0 +1,12 @@
+matriz = [[20, 30], [60, 70], [-10, 120]]
+n1, n2 = 0, 0
+for i in range(len(matriz)):
+        x = min(matriz[i])
+        y = max(matriz[i])
+        if x < n1:
+            n1 = x
+        if y > n2:
+            n2 = y
+
+print("O maior é", n1)
+print("O menor é", n2)
