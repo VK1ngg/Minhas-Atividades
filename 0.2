@@ -1,0 +1,13 @@
+matriz = [[0, 0], [0, 0], [0, 0]]
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        matriz[i][j] = int(input(f"Digite o {j+1}º elemento da {i+1}º coluna da matriz: "))
+print(matriz)
+
+Matriz = [[0, 0, 0], [0, 0, 0]]
+
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        Matriz[j][i] = matriz[i][j]
+
+print(Matriz)
