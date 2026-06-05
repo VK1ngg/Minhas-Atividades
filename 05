@@ -1,0 +1,15 @@
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+check = False
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        matriz[i][j] = int(input(f"Digite o {j+1}º elemento da {i+1}º coluna da matriz: "))
+
+n = int(input("Digite o número que deseja buscar: ")) 
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        if matriz[i][j] == n:
+            print("Número encontrado na posição", i, "e", j)
+            check = True
+
+if check == False:
+    print(f"O número {n} não foi encontrado na matriz.") 
