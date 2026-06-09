@@ -1,0 +1,18 @@
+N = int(input( ))
+for i in range(N):
+    palavra = list(input( ))
+    y = len(palavra)
+    x = 0
+    for i in palavra:
+        if 65 <= ord(i) <= 90 or 97 <= ord(i) <= 122:
+            palavra[x] = chr(ord(i)+3)
+        x += 1
+            
+    palavra  = palavra[::-1]
+    x = 0
+    for i in palavra:
+        if x >= (int(y/2)):
+            palavra[x] = chr(ord(i)-1)
+        x += 1
+    Palavra = "".join(palavra)
+    print(Palavra)
