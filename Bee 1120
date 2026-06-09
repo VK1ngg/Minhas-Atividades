@@ -1,0 +1,30 @@
+CHECK = True
+while CHECK == True:
+    x = 0
+    DN = input( ).split( )
+    if DN[0] == DN[1] == '0':
+        break
+    n1, n2, n3 = int(DN[0]), list(DN[1]), list(DN[1])
+    for i in range(len(n2)):
+        n2[i] = int(n2[i])
+        n3[i] = int(n3[i])
+    if n1 == n2 == 0:
+        CHECK = False
+    for i in n2:
+        if i == n1:
+            n3.remove(i)
+        x += 1
+    check = False
+    for i in n3:
+        if i != 0:
+            check = True
+
+    if check == False:
+        print('0')
+    else:
+        for i in range(len(n3)):
+            n3[i] = str(n3[i])
+            while i == '0':
+                n3.remove(i)
+        n3 = ''.join(n3)
+        print(int(n3))
