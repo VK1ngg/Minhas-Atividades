@@ -1,0 +1,20 @@
+N = int(input( ))
+for i in range(N):
+    string = str(input( ))
+    lista = [0] * 3
+    x = 0
+    check = False
+    for i in range(len(string)):
+        if string[i] in '1234567890' and check == False:
+            check = True
+            n1 = i
+        elif string[i] in '1234567890' and i == (len(string)-1):
+            n2 = i+1
+            lista[x] = int(string[n1:n2])
+        elif string[i] not in '1234567890' and check == True:
+            check = False
+            n2 = i
+            lista[x] = int(string[n1:n2])
+            x += 1
+
+    print(lista[0] + lista[1] + lista[2])
