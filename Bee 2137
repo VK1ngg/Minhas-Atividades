@@ -1,0 +1,12 @@
+while (True):
+    try:
+        N = int(input( ))
+        lista = [0] * N
+        for i in range(N):
+            lista[i] = input( )
+
+        for i in range(N):
+            print(min(lista))
+            lista.remove(min(lista))
+    except EOFError:
+        break
