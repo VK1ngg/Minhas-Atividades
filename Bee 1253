@@ -1,0 +1,14 @@
+N = int(input( ))
+for i in range(N):
+    palavra = str(input( ))
+    n1 = int(input( ))
+    lista = list(palavra)
+    for i in range(len(palavra)):
+        if lista[i] .isalpha():
+            x = lista[i]
+            if chr(ord(x) - n1) .isalpha():
+                lista[i] = chr(ord(x) - n1)
+            else:
+                lista[i] = chr(ord(x) + (26-n1))
+    Palavra = ''.join(lista)
+    print(Palavra)
