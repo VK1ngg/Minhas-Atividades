@@ -1,0 +1,16 @@
+while True:
+    try:
+        p = str(input( ))
+        lista = list(p)
+        letras = True
+        for i in range(len(p)):
+            if lista[i] .isalpha() and letras == True:
+                lista[i] = lista[i].upper()
+                letras = False
+            elif lista[i] .isalpha() and letras == False:
+                lista[i] = lista[i].lower()
+                letras = True
+        Palavra = ''.join(lista)
+        print(Palavra)
+    except EOFError:
+        break
