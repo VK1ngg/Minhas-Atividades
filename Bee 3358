@@ -1,0 +1,20 @@
+N = int(input( ))
+for i in range(N):
+    string = input( )
+    count = 0
+    x = 0
+    for i in string:
+        if i .isalpha( ):
+            if i not in 'aeiouAEIOU':
+                x += 1
+            else:
+                if x > count:
+                    count = x
+                    x = 0
+                else:
+                    x = 0
+    if count >= 3:
+        print(string+' nao eh facil')
+    else:
+        print(string+' eh facil')
+        
