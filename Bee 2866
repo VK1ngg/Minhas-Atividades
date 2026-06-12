@@ -1,0 +1,9 @@
+N = int(input( ))
+for i in range(N):
+    string = input( )
+    lista = [ ] * len(string) 
+    for i in range(len(string)):
+        if string[i].upper( ) != string[i]:
+            lista += string[i]
+    Palavra = ''.join(lista[::-1])
+    print(Palavra)
