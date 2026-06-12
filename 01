@@ -1,0 +1,13 @@
+estoque = []
+soma = 0
+for i in range(3):
+    item = {}
+    item["nome"] = input(f'Nome do produto {i+1}: ')
+    item['quantidade'] = int(input(f'Quantidade de {item["nome"]}: '))
+    item['preco'] = float(input(f'Preço de {item["nome"]}: '))
+    estoque.append(item)
+
+for item in estoque:
+   soma += item['quantidade'] * item['preco']
+
+print(f'Preço total: R$ {soma:.2f}')
