@@ -1,0 +1,9 @@
+marca, modelo, ano = [], [], []
+N = int(input( ))
+for i in range(N):
+    marca.append(input( ))
+    modelo.append(input( ))
+    ano.append(int(input( )))
+    
+x = ano.index(min(ano))
+print(marca[x])
